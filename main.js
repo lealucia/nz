@@ -7,4 +7,4 @@ var map = L.map('map').setView([-42.411667, 173.682222], 13); L.tileLayer('https
 
 var marker = L.marker([-42.411667, 173.682222]).addTo(map);
 
-marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+marker.bindPopup("<b>Hello world!</b><br>I am Kaikoura.").openPopup();
