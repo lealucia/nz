@@ -24,9 +24,9 @@ main {
     max-width: 1024px;
     margin: auto;
     margin-top: -50px;
-    border-left: 1px dashed grey;
-    border-right: 1px dashed grey;
-    border-bottom: 1px dashed grey;
+    border-left: 1px dashed darkblue;
+    border-right: 1px dashed darkblue;
+    border-bottom: 1px dashed darkblue;
 }
 
 article {
@@ -67,7 +67,7 @@ footer nav {
 }
 
 a {
-    color: black;
+    color: darkblue;
 }
 
 header img,
