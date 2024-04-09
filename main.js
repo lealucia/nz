@@ -9,4 +9,4 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var marker = L.marker([-42.411667, 173.682222]).addTo(map);
 
-marker.bindPopup("<b>Hello world!</b><br>I am Kaikoura.").openPopup();
+marker.bindPopup("<b>Hello world!</b><br> This is Kaikoura.").openPopup();
