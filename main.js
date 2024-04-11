@@ -11,10 +11,14 @@ let map = L.map('map', {
 }
 );
 
+
+
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
+
 
 
 let marker = L.marker([lat, lng]).addTo(map);
@@ -27,3 +31,6 @@ marker.bindPopup(`
 </ul> 
 `).openPopup();
 
+L.control.scale({
+   imperial: false
+}).addTo(map);
