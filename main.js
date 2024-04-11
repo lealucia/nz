@@ -1,11 +1,24 @@
 
-let map = L.map('map').setView([-42.411667, 173.682222], 13); L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+let lat= -42.411667;
+let lng= 173.682222;
+let zoom = 13; 
+
+
+let map = L.map('map').setView([lat,lng], zoom);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
 
-let marker = L.marker([-42.411667, 173.682222]).addTo(map);
+let marker = L.marker([lat, lng]).addTo(map);
 
-marker.bindPopup("<b>Hello world!</b><br>I am Kaikoura.").openPopup();
+marker.bindPopup(`
+<h2>Kaikoura!</h2>
+<ul>
+<li> Breite: ${lat}
+<li> Länge: ${lng}
+</ul> 
+`).openPopup();
 
