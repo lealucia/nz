@@ -17,8 +17,8 @@ let marker = L.marker([lat, lng]).addTo(map);
 marker.bindPopup(`
 <h2>Kaikoura!</h2>
 <ul>
-<li> Breite: ${lat}
-<li> Länge: ${lng}
+<li> Breite: ${lat.toFixed(5)}
+<li> Länge: ${lng.toFixed(5)}}
 </ul> 
 `).openPopup();
 
