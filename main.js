@@ -1,5 +1,5 @@
-let lat = -42.411667;
-let lng = 173.682222;
+let lat = -42.41167;
+let lng = 173.68222;
 let zoom = 13;
 
 let map = L.map('map', {
@@ -25,6 +25,7 @@ let jsonPunkt = {
 };
 
 L.geoJSON(jsonPunkt, {}).bindPopup(function (layer) {
+
     return `
     <h2>${layer.feature.properties.name}</h2>
     <ul>
